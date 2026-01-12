@@ -1,12 +1,24 @@
 {
-    "name": "@frontend-guard/react",
-    "version": "0.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "peerDependencies": {
-      "react": ">=18"
-    },
-    "scripts": {
-      "build": "tsc -p tsconfig.json"
-    }
+  "name": "@frontend-guard/react",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "@frontend-guard/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3"
   }
+}
