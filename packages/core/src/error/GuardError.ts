@@ -1,25 +1,25 @@
-import type { GuardErrorCode } from './GuardErrorCode'
+import type { GuardErrorCode } from "./GuardErrorCode";
 
 export class GuardError extends Error {
-  readonly code: GuardErrorCode
-  readonly cause?: unknown
-  readonly meta?: Record<string, unknown>
+  readonly code: GuardErrorCode;
+  readonly cause?: unknown;
+  readonly meta?: Record<string, unknown>;
 
   constructor(params: {
-    message: string
-    code?: GuardErrorCode
-    cause?: unknown
-    meta?: Record<string, unknown>
+    message: string;
+    code?: GuardErrorCode;
+    cause?: unknown;
+    meta?: Record<string, unknown>;
   }) {
-    super(params.message)
+    super(params.message);
 
-    this.name = 'GuardError'
-    this.code = params.code ?? 'UNKNOWN'
-    this.cause = params.cause
-    this.meta = params.meta
+    this.name = "GuardError";
+    this.code = params.code ?? "UNKNOWN";
+    this.cause = params.cause;
+    this.meta = params.meta;
 
     // Fix prototype chain (important for instanceof)
-    Object.setPrototypeOf(this, GuardError.prototype)
+    Object.setPrototypeOf(this, GuardError.prototype);
   }
 
   toJSON() {
@@ -28,6 +28,6 @@ export class GuardError extends Error {
       message: this.message,
       code: this.code,
       meta: this.meta,
-    }
+    };
   }
 }

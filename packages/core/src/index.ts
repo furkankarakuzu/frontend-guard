@@ -1,3 +1,7 @@
-export { GuardError } from './error/GuardError'
-export { createGuardError } from './error/createGuardError'
-export type { GuardErrorCode } from './error/GuardErrorCode'
+export { GuardError, createGuardError } from "./error";
+
+export type { GuardErrorCode } from "./error";
+
+export { guard } from "./guard";
+
+export type { GuardResult } from "./guard";
