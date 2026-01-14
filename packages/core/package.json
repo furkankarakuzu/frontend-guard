@@ -1,9 +1,21 @@
 {
-    "name": "frontend-guard",
-    "version": "0.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-      "build": "tsc -p tsconfig.json"
+  "name": "@frontend-guard-org/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic utility for explicit async execution and error handling",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
   }
+}
