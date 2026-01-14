@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import type { GuardError } from "@frontend-guard/core";
+import type { GuardError } from "@frontend-guard-org/core";
 
 type GuardFallback = (error: GuardError) => React.ReactNode;
 

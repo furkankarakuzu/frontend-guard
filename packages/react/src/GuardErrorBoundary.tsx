@@ -1,5 +1,5 @@
 import React from "react";
-import { GuardError } from "@frontend-guard/core";
+import { GuardError } from "@frontend-guard-org/core";
 import { useGuardContext } from "./GuardContext";
 
 type Props = {

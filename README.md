@@ -37,13 +37,13 @@ Instead of throwing or silently failing, it returns a structured result:
 ## Installation
 
 ```bash
-npm install @frontend-guard/core
+npm install @frontend-guard-org/core
 ```
 
 For React:
 
 ```bash
-npm install @frontend-guard/react
+npm install @frontend-guard-org/react
 ```
 
 ---
@@ -51,7 +51,7 @@ npm install @frontend-guard/react
 ## Core Usage
 
 ```ts
-import { guard } from '@frontend-guard/core'
+import { guard } from '@frontend-guard-org/core'
 
 const result = await guard(async () => {
   const res = await fetch('/api/user')
@@ -85,7 +85,7 @@ import {
   GuardProvider,
   GuardErrorBoundary,
   useGuard,
-} from '@frontend-guard/react'
+} from '@frontend-guard-org/react'
 
 function User() {
   const { run } = useGuard()
@@ -139,8 +139,8 @@ Make async execution and failure handling explicit and predictable.
 
 ## Packages
 
-- @frontend-guard/core — framework-agnostic logic
-- @frontend-guard/react — React adapter
+- @frontend-guard-org/core — framework-agnostic logic
+- @frontend-guard-org/react — React adapter
 
 ---
 
