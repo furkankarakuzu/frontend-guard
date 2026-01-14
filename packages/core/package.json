@@ -1,6 +1,6 @@
 {
   "name": "@frontend-guard-org/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic utility for explicit async execution and error handling",
   "license": "MIT",
   "type": "module",
