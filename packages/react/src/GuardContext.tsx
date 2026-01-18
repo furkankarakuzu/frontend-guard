@@ -7,7 +7,7 @@ type GuardContextValue = {
   fallback?: GuardFallback;
 };
 
-const GuardContext = createContext<GuardContextValue>({});
+export const GuardContext = createContext<GuardContextValue>({});
 
 export function GuardProvider({
   fallback,

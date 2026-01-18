@@ -1,6 +1,6 @@
 import React from "react";
 import { GuardError } from "@frontend-guard-org/core";
-import { useGuardContext } from "./GuardContext";
+import { GuardContext, useGuardContext } from "./GuardContext";
 
 type Props = {
   fallback?: (error: GuardError) => React.ReactNode;
@@ -41,4 +41,4 @@ export class GuardErrorBoundary extends React.Component<Props, State> {
   }
 }
 
-GuardErrorBoundary.contextType = React.createContext(null);
+GuardErrorBoundary.contextType = GuardContext;

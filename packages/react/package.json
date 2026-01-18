@@ -16,10 +16,12 @@
     }
   },
   "peerDependencies": {
-    "react": ">=18"
+    "react": ">=18",
+    "@frontend-guard-org/core": "^0.1.0"
   },
-  "dependencies": {
-    "@frontend-guard-org/core": "file:../core"
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@frontend-guard-org/core": "*"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json"
