@@ -1,4 +1,4 @@
-export { GuardError, createGuardError } from "./error";
+export { GuardError } from "./error";
 
 export type { GuardErrorCode } from "./error";
 
